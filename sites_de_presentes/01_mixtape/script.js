@@ -1,0 +1,1 @@
+const tracks=document.querySelectorAll('#tracks li');const msg=document.querySelector('#message');const play=document.querySelector('#play');tracks.forEach(t=>t.onclick=()=>{tracks.forEach(x=>x.classList.remove('playing'));t.classList.add('playing');msg.textContent=t.dataset.msg});play.onclick=()=>{msg.textContent='♪ agora tocando: a mixtape feita especialmente para você ♡'};

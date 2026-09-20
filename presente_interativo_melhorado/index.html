@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feliz Aniversário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<main class="phone">
+    <div class="notch"></div>
+    <div class="status"><span>15:42</span><span>♡ ▰</span></div>
+
+    <section class="home">
+        <p class="eyebrow">Feliz Aniversário!</p>
+        <h1>Olá, Abelinha</h1>
+        <p class="subtitle"></p>
+
+        <div class="apps">
+            <button onclick="app('mensagens')">💬<small>Mensagens</small></button>
+            <button onclick="app('fotos')">📷<small>Fotos</small></button>
+            <button onclick="app('musica')">🎵<small>Música</small></button>
+            <button onclick="app('memorias')">📅<small>Calendário</small></button>
+            <button onclick="app('carta')">💌<small>Carta</small></button>
+            <button onclick="app('presente')">🎁<small>Presente</small></button>
+        </div>
+    </section>
+
+    <section id="popup" class="popup hidden"></section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

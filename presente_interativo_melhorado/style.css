@@ -1,0 +1,211 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #e9e5e1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #252321;
+}
+
+.phone {
+    width: 350px;
+    min-height: 700px;
+    background: #f8f7f4;
+    border: 8px solid #202020;
+    border-radius: 42px;
+    padding: 25px;
+    box-shadow: 0 25px 70px #0003;
+    position: relative;
+    overflow: hidden;
+}
+
+.notch {
+    width: 105px;
+    height: 24px;
+    background: #202020;
+    border-radius: 0 0 18px 18px;
+    margin: -25px auto 18px;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #555;
+}
+
+.home h1 {
+    font: italic 34px Georgia, serif;
+    margin: 8px 0 8px;
+}
+
+.eyebrow {
+    margin: 42px 0 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    color: #8d8178;
+}
+
+.subtitle {
+    margin: 0 0 38px;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.apps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 27px 18px;
+}
+
+.apps button {
+    border: 0;
+    background: none;
+    color: #252321;
+    font-size: 32px;
+    cursor: pointer;
+    transition: transform .2s ease;
+}
+
+.apps button:hover {
+    transform: translateY(-4px);
+}
+
+.apps small {
+    display: block;
+    font-size: 10px;
+    margin-top: 7px;
+}
+
+.popup {
+    position: absolute;
+    inset: 82px 18px 18px;
+    background: rgba(255,255,255,.98);
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 12px 35px #0002;
+    overflow-y: auto;
+    animation: open .25s ease;
+}
+
+.hidden { display: none; }
+
+@keyframes open {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.close {
+    border: 0;
+    background: #f0eeeb;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    float: right;
+}
+
+.popup h2 {
+    font: 24px Georgia, serif;
+    margin: 8px 0 8px;
+}
+
+.popup p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.photo-viewer {
+    position: relative;
+    margin-top: 18px;
+}
+
+.photo-card {
+    display: none;
+}
+
+.photo-card.active {
+    display: block;
+}
+
+.photo-card img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+    background: #eee;
+}
+
+.photo-caption {
+    padding: 12px 5px 4px;
+    text-align: center;
+    font: italic 16px Georgia, serif;
+    color: #4e4843;
+}
+
+.arrow {
+    position: absolute;
+    top: 135px;
+    width: 38px;
+    height: 38px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255,255,255,.9);
+    box-shadow: 0 4px 12px #0002;
+    cursor: pointer;
+    font-size: 22px;
+    z-index: 2;
+}
+
+.arrow.left { left: 8px; }
+.arrow.right { right: 8px; }
+
+.dots {
+    text-align: center;
+    margin-top: 7px;
+}
+
+.dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 3px;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+.dot.active { background: #555; }
+
+.birthday-photo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin: 12px 0;
+    background: #eee;
+}
+
+.youtube {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 16px;
+    margin-top: 15px;
+}
+
+.note {
+    background: #f4f1ed;
+    padding: 14px;
+    border-radius: 14px;
+    margin-top: 14px;
+    font-size: 12px;
+    color: #777;
+}

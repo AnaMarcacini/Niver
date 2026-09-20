@@ -1,0 +1,1 @@
+function reveal(){document.querySelector('#final').textContent='E se eu pudesse escolher de novo, escolheria viver todos esses momentos outra vez. ♡'}

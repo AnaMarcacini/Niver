@@ -1,0 +1,1 @@
+function openGift(){document.querySelector('#screen').innerHTML='<p>$ cat mensagem.txt</p><br><p>Você é uma daquelas pessoas que tornam os dias mais legais.</p><p>Obrigada por existir e por fazer parte da minha história. ♡</p><br><p>$ echo "feliz aniversário!"</p>'}

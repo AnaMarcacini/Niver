@@ -1,0 +1,2 @@
+const text={mensagens:'💬 Você recebeu uma mensagem: “<br>Feliz aniversario Isa! <br>Espero que aproveite muito o seu aniversário aí na Italia! Ansiosa para comemora aqui com você!”',fotos:'📷 Aqui poderiam estar nossas melhores fotos.',musica:'🎵 Nossa música está pronta para tocar.',memorias:'📅 Hoje é mais um capítulo da nossa história.',carta:'💌 Uma carta inteira esperando por você.',presente:'🎁 Você desbloqueou o presente: uma vida cheia de momentos bons.'}
+;function app(x){document.querySelector('#popup').textContent=text[x]}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#111318" />
+  <title>Um pequeno lugar para você ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="stage">
+    <section class="phone" id="phone" aria-label="Celular-presente">
+      <div class="camera"></div>
+
+      <!-- TELA DE BLOQUEIO -->
+      <section class="screen lock-screen active" id="lockScreen">
+        <div class="lock-wallpaper"></div>
+        <div class="lock-content">
+          <div class="lock-date" id="lockDate">19 de setembro</div>
+          <div class="lock-time" id="lockTime">15:42</div>
+          <div class="lock-message">um pequeno lugar feito especialmente para você</div>
+        </div>
+        <button class="unlock" id="unlockBtn">Deslize para desbloquear <span>→</span></button>
+        <div class="home-indicator"></div>
+      </section>
+
+      <!-- HOME -->
+      <section class="screen home-screen" id="homeScreen">
+        <div class="wallpaper"></div>
+        <header class="status-bar">
+          <span id="homeTime">15:42</span>
+          <div class="status-icons"><span>⌁</span><span>◉</span><span class="battery">▰</span></div>
+        </header>
+
+        <div class="home-header">
+          <div>
+            <small>um presente digital</small>
+            <h1>Olá, <span id="personName">[NOME]</span> <button class="heart-btn" id="heartEgg">♡</button></h1>
+          </div>
+        </div>
+
+        <div class="app-grid">
+          <button class="app" data-app="messages"><span class="app-icon messages-icon">💬</span><span>Mensagens</span></button>
+          <button class="app" data-app="photos"><span class="app-icon photos-icon">◌</span><span>Fotos</span></button>
+          <button class="app" data-app="music"><span class="app-icon music-icon">♫</span><span>Música</span></button>
+          <button class="app" data-app="memories"><span class="app-icon memories-icon">✦</span><span>Memórias</span></button>
+          <button class="app" data-app="letter"><span class="app-icon letter-icon">✉</span><span>Carta</span></button>
+          <button class="app locked-app" data-app="gift" id="giftApp"><span class="app-icon gift-icon">◇</span><span>Presente</span><i id="giftLock">• • •</i></button>
+        </div>
+
+        <div class="home-note" id="homeNote">explore tudo com calma ♡</div>
+        <div class="home-indicator"></div>
+      </section>
+
+      <!-- CONTAINER DOS APPS -->
+      <section class="screen app-screen" id="appScreen">
+        <header class="app-topbar">
+          <button class="back-btn" id="backBtn">‹</button>
+          <span id="appTitle">App</span>
+          <span class="topbar-dot"></span>
+        </header>
+        <div class="app-content" id="appContent"></div>
+        <div class="home-indicator"></div>
+      </section>
+
+      <div class="toast" id="toast"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

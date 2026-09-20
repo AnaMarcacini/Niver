@@ -1,0 +1,1 @@
+function openGift(el,msg){el.textContent='✨';document.querySelector('#result').textContent=msg}

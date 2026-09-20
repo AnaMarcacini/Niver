@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mixtape — para você</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <main>
+    <section class="cover" id="home">
+      <div class="topline">
+        <span>PLAYLIST_01</span>
+        <span>2026</span>
+      </div>
+
+      <div class="cover-inner">
+        <div class="cover-copy">
+          <p class="eyebrow">a mixtape for</p>
+          <h1>[NOME]</h1>
+          <p class="intro">algumas músicas, algumas memórias<br>e um feliz aniversário.</p>
+          <button class="start" id="startBtn">▶ começar a mixtape</button>
+        </div>
+
+        <div class="cassette" aria-label="Capa da mixtape">
+          <div class="cassette-label">
+            <span>A-SIDE</span>
+            <strong>FOR YOU</strong>
+            <small>TRACKS / MEMORIES / 2026</small>
+          </div>
+          <div class="reel left"></div>
+          <div class="reel right"></div>
+          <div class="tape-line"></div>
+        </div>
+      </div>
+
+      <div class="scroll-note">↓ role para ouvir</div>
+    </section>
+
+    <section class="player-section">
+      <div class="section-number">01</div>
+
+      <div class="player">
+        <div class="now-playing">
+          <div class="album-art" id="albumArt">
+            <span>01</span>
+          </div>
+          <div>
+            <p class="eyebrow">now playing</p>
+            <h2 id="songTitle">Sua música aqui</h2>
+            <p id="songArtist">artista</p>
+          </div>
+        </div>
+
+        <div class="progress">
+          <span id="currentTime">00:00</span>
+          <div class="bar"><div id="progressFill"></div></div>
+          <span id="duration">00:00</span>
+        </div>
+
+        <div class="controls">
+          <button id="prevBtn">←</button>
+          <button class="play" id="playBtn">▶</button>
+          <button id="nextBtn">→</button>
+        </div>
+
+        <audio id="audio"></audio>
+      </div>
+    </section>
+
+    <section class="tracklist">
+      <div class="section-number">02</div>
+      <div class="heading-row">
+        <div>
+          <p class="eyebrow">the playlist</p>
+          <h2>lado A</h2>
+        </div>
+        <span>06 faixas</span>
+      </div>
+
+      <div id="tracks"></div>
+    </section>
+
+    <section class="memory">
+      <div class="section-number">03</div>
+      <div class="memory-grid">
+        <div class="memory-photo">
+          <img src="assets/foto1.jpg" alt="Uma memória">
+          <span>memory_01.jpg</span>
+        </div>
+        <div class="memory-copy">
+          <p class="eyebrow">side note</p>
+          <h2>uma música pode guardar um momento inteiro.</h2>
+          <p>
+            A ideia aqui é simples: uma pequena mixtape feita para lembrar
+            algumas coisas boas. Troque este texto por uma mensagem sua.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="letter">
+      <div class="section-number">04</div>
+      <div class="letter-card">
+        <p class="eyebrow">liner notes</p>
+        <p>
+          Feliz aniversário, [NOME].<br><br>
+          Fiz essa mixtape porque algumas pessoas merecem mais do que
+          uma mensagem pronta. Espero que essas músicas façam companhia
+          em algum momento e que o próximo capítulo seja cheio de coisas
+          boas.<br><br>
+          — [SEU NOME]
+        </p>
+      </div>
+    </section>
+
+    <section class="end">
+      <p class="eyebrow">end of side A</p>
+      <h2>happy birthday.</h2>
+      <button id="replayBtn">↻ ouvir de novo</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
