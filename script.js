@@ -94,7 +94,13 @@ function app(name) {
             <audio id="birthday-audio" autoplay>
                     <source src="musicas/aniversario.mp3" type="audio/mpeg">
                 </audio>
-
+            <iframe
+                id="youtube-player"
+                width="1"
+                height="1"
+                src="https://www.youtube.com/embed/P52crWWUnOw?autoplay=1&controls=0&start=30&end=40"
+                allow="autoplay">
+            </iframe>
         `,
 
         carta: `
